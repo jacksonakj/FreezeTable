@@ -1,0 +1,73 @@
+body {
+    margin:  0; padding:  0;
+}
+dl dt { font-weight:  bold; }
+.container {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    width:  960px;
+    margin:  0 auto;
+}
+
+.column { float:  left; width: 460px; margin: 0 20px 0 0; }
+
+.tabs { padding: 0; clear: both; }
+.tabs li { display: inline; }
+.tabs li a { background: #ccf; padding: 10px; float:left; border-right: 1px solid #ccf; border-bottom: none; text-decoration: none; color: #000; font-weight: bold;}
+.tabs li.active a { background: #eef; }
+.tabs-content { float: left; clear: both; border: 1px solid #ccf; border-top: none; border-left: none; background: #eef; padding: 10px 20px 20px; width: 960px; }
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+#box-table-a
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+#box-table-a th
+{
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+#box-table-a td
+{
+    padding: 8px;
+    background: #e8edff; 
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid transparent;
+}
+#box-table-a tr:hover td
+{
+    background: #d0dafd;
+    color: #339;
+}
+
+.column-make {
+    width: 240px;
+}
+.column-display {
+    width: 140px;
+}
+.column-country {
+    width: 140px;
+}
+

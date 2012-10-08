@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>jquery.freezetable</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>jquery.freezetable</h1>
+            <p>The jquery.freezetable plugin freezes the header row of a table and adds a scroll bar to allow a long table to be scrolled vertically.</p>
+
+            <table id="box-table-a">
+                <colgroup>
+                    <col class="column-make" />
+                    <col class="column-display" />
+                    <col class="column-country" />       
+                </colgroup>
+            <thead>
+                <tr>
+                    <th>make_id</th>
+                    <th>make_display</th>
+                    <th>make_country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>abarth</td><td>Abarth</td><td>Italy</td></tr>
+                <tr><td>ac</td><td>AC</td><td>UK</td></tr>
+                <tr><td>acura</td><td>Acura</td><td>USA</td></tr>
+                <tr><td>alfa-romeo</td><td>Alfa Romeo</td><td>Italy</td></tr>
+                <tr><td>allard</td><td>Allard</td><td>UK</td></tr>
+                <tr><td>alpina</td><td>Alpina</td><td>UK</td></tr>
+                <tr><td>alpine</td><td>Alpine</td><td>Germany</td></tr>
+                <tr><td>alvis</td><td>Alvis</td><td>UK</td></tr>
+                <tr><td>amc</td><td>AMC</td><td>USA</td></tr>
+                <tr><td>ariel</td><td>Ariel</td><td>UK</td></tr>
+                <tr><td>armstrong-siddeley</td><td>Armstrong Siddeley</td><td>UK</td></tr>
+                <tr><td>ascari</td><td>Ascari</td><td>UK</td></tr>
+                <tr><td>aston-martin</td><td>Aston Martin</td><td>UK</td></tr>
+                <tr><td>audi</td><td>Audi</td><td>Germany</td></tr>
+                <tr><td>austin</td><td>Austin</td><td>UK</td></tr>
+                <tr><td>austin-healey</td><td>Austin-Healey</td><td>UK</td></tr>
+                <tr><td>autobianchi</td><td>Autobianchi</td><td>Italy</td></tr>
+                <tr><td>auverland</td><td>Auverland</td><td>France</td></tr>
+                <tr><td>avanti</td><td>Avanti</td><td>USA</td></tr>
+                <tr><td>beijing</td><td>Beijing</td><td>China</td></tr>
+                <tr><td>bentley</td><td>Bentley</td><td>UK</td></tr>
+                <tr><td>berkeley</td><td>Berkeley</td><td>UK</td></tr>
+                <tr><td>bitter</td><td>Bitter</td><td>Germany</td></tr>
+                <tr><td>bizzarrini</td><td>Bizzarrini</td><td>Italy</td></tr>
+                <tr><td>bmw</td><td>BMW</td><td>Germany</td></tr>
+                <tr><td>brilliance</td><td>Brilliance</td><td>China</td></tr>
+                <tr><td>bristol</td><td>Bristol</td><td>UK</td></tr>
+                <tr><td>bugatti</td><td>Bugatti</td><td>Italy</td></tr>
+                <tr><td>buick</td><td>Buick</td><td>USA</td></tr>
+                <tr><td>cadillac</td><td>Cadillac</td><td>USA</td></tr>
+                <tr><td>caterham</td><td>Caterham</td><td>UK</td></tr>
+                <tr><td>checker</td><td>Checker</td><td>USA</td></tr>
+                <tr><td>chevrolet</td><td>Chevrolet</td><td>USA</td></tr>
+                <tr><td>chrysler</td><td>Chrysler</td><td>USA</td></tr>
+                <tr><td>citroen</td><td>Citroen</td><td>France</td></tr>
+                <tr><td>dacia</td><td>Dacia</td><td>Romania</td></tr>
+                <tr><td>daewoo</td><td>Daewoo</td><td>South Korea</td></tr>
+                <tr><td>daf</td><td>DAF</td><td>Netherlands</td></tr>
+                <tr><td>daihatsu</td><td>Daihatsu</td><td>Japan</td></tr>
+                <tr><td>daimler</td><td>Daimler</td><td>UK</td></tr>
+                <tr><td>datsun</td><td>Datsun</td><td>Japan</td></tr>
+                <tr><td>de-tomaso</td><td>De Tomaso</td><td>Italy</td></tr>
+                <tr><td>dkw</td><td>DKW</td><td>Germany</td></tr>
+                <tr><td>dodge</td><td>Dodge</td><td>USA</td></tr>
+                <tr><td>donkervoort</td><td>Donkervoort</td><td>Netherlands</td></tr>
+                <tr><td>eagle</td><td>Eagle</td><td>USA</td></tr>
+                <tr><td>fairthorpe</td><td>Fairthorpe</td><td>UK</td></tr>
+                <tr><td>ferrari</td><td>Ferrari</td><td>Italy</td></tr>
+                <tr><td>fiat</td><td>Fiat</td><td>Italy</td></tr>
+                <tr><td>fisker</td><td>Fisker</td><td>USA</td></tr>
+                <tr><td>ford</td><td>Ford</td><td>USA</td></tr>
+                <tr><td>gaz</td><td>GAZ</td><td>Russia</td></tr>
+                <tr><td>geely</td><td>Geely</td><td>China</td></tr>
+                <tr><td>ginetta</td><td>Ginetta</td><td>UK</td></tr>
+                <tr><td>gmc</td><td>GMC</td><td>USA</td></tr>
+                <tr><td>holden</td><td>Holden</td><td>Australia</td></tr>
+                <tr><td>honda</td><td>Honda</td><td>Japan</td></tr>
+                <tr><td>hudson</td><td>Hudson</td><td>USA</td></tr>
+                <tr><td>humber</td><td>Humber</td><td>UK</td></tr>
+                <tr><td>hummer</td><td>Hummer</td><td>USA</td></tr>
+                <tr><td>hyundai</td><td>Hyundai</td><td>South Korea</td></tr>
+                <tr><td>infiniti</td><td>Infiniti</td><td>Japan</td></tr>
+                <tr><td>innocenti</td><td>Innocenti</td><td>Italy</td></tr>
+                <tr><td>isuzu</td><td>Isuzu</td><td>Japan</td></tr>
+                <tr><td>italdesign</td><td>Italdesign</td><td>Italy</td></tr>
+                <tr><td>jaguar</td><td>Jaguar</td><td>UK</td></tr>
+                <tr><td>jeep</td><td>Jeep</td><td>USA</td></tr>
+                <tr><td>jensen</td><td>Jensen</td><td>UK</td></tr>
+                <tr><td>kia</td><td>Kia</td><td>South Korea</td></tr>
+                <tr><td>koenigsegg</td><td>Koenigsegg</td><td>Sweden</td></tr>
+                <tr><td>lada</td><td>Lada</td><td>Russia</td></tr>
+                <tr><td>lamborghini</td><td>Lamborghini</td><td>Italy</td></tr>
+                <tr><td>lancia</td><td>Lancia</td><td>Italy</td></tr>
+                <tr><td>land-rover</td><td>Land Rover</td><td>UK</td></tr>
+                <tr><td>lexus</td><td>Lexus</td><td>Japan</td></tr>
+                <tr><td>lincoln</td><td>Lincoln</td><td>USA</td></tr>
+                <tr><td>lotec</td><td>Lotec</td><td>Germany</td></tr>
+                <tr><td>lotus</td><td>Lotus</td><td>UK</td></tr>
+                <tr><td>luxgen</td><td>Luxgen</td><td>Taiwan</td></tr>
+                <tr><td>mahindra</td><td>Mahindra</td><td>India</td></tr>
+                <tr><td>marcos</td><td>Marcos</td><td>UK</td></tr>
+                <tr><td>maserati</td><td>Maserati</td><td>Italy</td></tr>
+                <tr><td>matra-simca</td><td>Matra-Simca</td><td>France</td></tr>
+                <tr><td>maybach</td><td>Maybach</td><td>Germany</td></tr>
+                <tr><td>mazda</td><td>Mazda</td><td>Japan</td></tr>
+                <tr><td>mcc</td><td>MCC</td><td>Germany</td></tr>
+                <tr><td>mclaren</td><td>McLaren</td><td>UK</td></tr>
+                <tr><td>mercedes-benz</td><td>Mercedes-Benz</td><td>Germany</td></tr>
+                <tr><td>mercury</td><td>Mercury</td><td>USA</td></tr>
+                <tr><td>mg</td><td>MG</td><td>UK</td></tr>
+                <tr><td>mini</td><td>Mini</td><td>UK</td></tr>
+                <tr><td>mitsubishi</td><td>Mitsubishi</td><td>Japan</td></tr>
+                <tr><td>monteverdi</td><td>Monteverdi</td><td>Switzerland</td></tr>
+                <tr><td>moretti</td><td>Moretti</td><td>Italy</td></tr>
+                <tr><td>morgan</td><td>Morgan</td><td>UK</td></tr>
+                <tr><td>morris</td><td>Morris</td><td>UK</td></tr>
+                <tr><td>nissan</td><td>Nissan</td><td>Japan</td></tr>
+                <tr><td>noble</td><td>Noble</td><td>UK</td></tr>
+                <tr><td>nsu</td><td>NSU</td><td>Germany</td></tr>
+                <tr><td>oldsmobile</td><td>Oldsmobile</td><td>USA</td></tr>
+                <tr><td>opel</td><td>Opel</td><td>Germany</td></tr>
+                <tr><td>packard</td><td>Packard</td><td>USA</td></tr>
+                <tr><td>pagani</td><td>Pagani</td><td>Italy</td></tr>
+                <tr><td>panoz</td><td>Panoz</td><td>USA</td></tr>
+                <tr><td>peugeot</td><td>Peugeot</td><td>France</td></tr>
+                <tr><td>pininfarina</td><td>Pininfarina</td><td>Italy</td></tr>
+                <tr><td>plymouth</td><td>Plymouth</td><td>USA</td></tr>
+                <tr><td>pontiac</td><td>Pontiac</td><td>USA</td></tr>
+                <tr><td>porsche</td><td>Porsche</td><td>Germany</td></tr>
+                <tr><td>proton</td><td>Proton</td><td>Malaysia</td></tr>
+                <tr><td>reliant</td><td>Reliant</td><td>UK</td></tr>
+                <tr><td>renault</td><td>Renault</td><td>France</td></tr>
+                <tr><td>riley</td><td>Riley</td><td>UK</td></tr>
+                <tr><td>rolls-royce</td><td>Rolls-Royce</td><td>UK</td></tr>
+                <tr><td>rover</td><td>Rover</td><td>UK</td></tr>
+                <tr><td>saab</td><td>Saab</td><td>Sweden</td></tr>
+                <tr><td>saleen</td><td>Saleen</td><td>USA</td></tr>
+                <tr><td>samsung</td><td>Samsung</td><td>South Korea</td></tr>
+                <tr><td>saturn</td><td>Saturn</td><td>USA</td></tr>
+                <tr><td>scion</td><td>Scion</td><td>Japan</td></tr>
+                <tr><td>seat</td><td>Seat</td><td>Spain</td></tr>
+                <tr><td>simca</td><td>Simca</td><td>France</td></tr>
+                <tr><td>singer</td><td>Singer</td><td>UK</td></tr>
+                <tr><td>skoda</td><td>Skoda</td><td>Czech Republic</td></tr>
+                <tr><td>smart</td><td>Smart</td><td>France</td></tr>
+                <tr><td>spyker</td><td>Spyker</td><td>Netherlands</td></tr>
+                <tr><td>ssangyong</td><td>SsangYong</td><td>South Korea</td></tr>
+                <tr><td>ssc</td><td>SSC</td><td>USA</td></tr>
+                <tr><td>steyr</td><td>Steyr</td><td>Austria</td></tr>
+                <tr><td>studebaker</td><td>Studebaker</td><td>USA</td></tr>
+                <tr><td>subaru</td><td>Subaru</td><td>Japan</td></tr>
+                <tr><td>sunbeam</td><td>Sunbeam</td><td>UK</td></tr>
+                <tr><td>suzuki</td><td>Suzuki</td><td>Japan</td></tr>
+                <tr><td>talbot</td><td>Talbot</td><td>UK</td></tr>
+                <tr><td>tata</td><td>Tata</td><td>India</td></tr>
+                <tr><td>tatra</td><td>Tatra</td><td>Czech Republic</td></tr>
+                <tr><td>tesla</td><td>Tesla</td><td>USA</td></tr>
+                <tr><td>toyota</td><td>Toyota</td><td>Japan</td></tr>
+                <tr><td>trabant</td><td>Trabant</td><td>Germany</td></tr>
+                <tr><td>triumph</td><td>Triumph</td><td>UK</td></tr>
+                <tr><td>tvr</td><td>TVR</td><td>UK</td></tr>
+                <tr><td>vauxhall</td><td>Vauxhall</td><td>Germany</td></tr>
+                <tr><td>vector</td><td>Vector</td><td>Japan</td></tr>
+                <tr><td>venturi</td><td>Venturi</td><td>France</td></tr>
+                <tr><td>volkswagen</td><td>Volkswagen</td><td>Germany</td></tr>
+                <tr><td>volvo</td><td>Volvo</td><td>Sweden</td></tr>
+                <tr><td>wartburg</td><td>Wartburg</td><td>Germany</td></tr>
+                <tr><td>westfield</td><td>Westfield</td><td>UK</td></tr>
+                <tr><td>willys-overland</td><td>Willys-Overland</td><td>USA</td></tr>
+                <tr><td>xedos</td><td>Xedos</td><td>Japan</td></tr>
+                <tr><td>zagato</td><td>Zagato</td><td>Italy</td></tr>
+                <tr><td>zastava</td><td>Zastava</td><td>Serbia</td></tr>
+                <tr><td>zaz</td><td>ZAZ</td><td>Ukraine</td></tr>
+                <tr><td>zenvo</td><td>Zenvo</td><td>Denmark</td></tr>
+                <tr><td>zil</td><td>ZIL</td><td>Russia</td></tr>
+            </tbody>
+            </table>​   
+            <div class="group">
+            <ul id="menu-tabs" class="tabs">
+                <li class="active"><a href="#overview">Overview</a></li>
+                <li><a href="#options">Options</a></li>
+                <li><a href="#events">Demos</a></li>
+            </ul>
+              <div id="overview"  class="tabs-content">
+               <p>jquery.freezetable when applied to a table will freeze the top table header and add vertical scroll bars to the body of the table.</p>
+               <p>The table markup needs to adhere to the <a href="http://www.w3.org/TR/html4/struct/tables.html">HTML 4.01 Specification for Tables</a>.
+               The row groups <a href="http://www.w3.org/TR/html4/struct/tables.html#edef-THEAD">THEAD</a> 
+               and <a href="http://www.w3.org/TR/html4/struct/tables.html#edef-TBODY">TBODY</a> are used to determine which sections of the table 
+               should be frozen.  jquery.freezetable clones the table and removes the TBODY from the cloned copy to 'freeze' the header.  
+               It then removes the THEAD from the original table to make the scrollable portion of the table.  jquery.freezetable also depends on 
+               <a href="http://www.w3.org/TR/html4/struct/tables.html#edef-COLGROUP">COLGROUP</a> to maintain consistent column styling between the orginal
+               and cloned header table.</p>
+                  <div class="group">
+                    <div class="column">
+               <h4>Expected &lt;table&gt; markup</h4>
+               <pre>
+&lt;table id=&quot;mytable&quot;&gt;
+  &lt;colgroup&gt;
+    &lt;col class=&quot;column-make&quot; /&gt;
+    &lt;col class=&quot;column-display&quot; /&gt;
+    &lt;col class=&quot;column-country&quot; /&gt;       
+  &lt;/colgroup&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;make_id&lt;/th&gt;
+      &lt;th&gt;make_display&lt;/th&gt;
+      &lt;th&gt;make_country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;abarth&lt;/td&gt;
+      &lt;td&gt;Abarth&lt;/td&gt;
+      &lt;td&gt;Italy&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                </pre>                    
+                    </div>
+                    <div class="column">
+                  <h4>Usage</h4>
+                  <pre>
+$(document).ready(function () {
+    $('#mytable').freezeTable({
+        'autoHeight': false,
+        'height': 160
+    });
+});
+</pre>                    
+                    </div>
+                  </div>
+
+
+            </div>
+            <div id="options" class="tabs-content">
+                <dl>
+                    <dt>height</dt>
+                    <dd>Integer - The height of the scrollable part of the table.  Only used when 'autoHeight' is true.</dd>
+                    <dd><i>Default:</i> 480</dd>
+                    <dt>scrollbarWidth</dt>
+                    <dd>Integer - The width of the area to the right of the table reserved for the scrollbar.</dd>
+                    <dd><i>Default:</i> 20</dd>
+                    <dt>autoHeight</dt>
+                    <dd>Boolean - When 'true' the scrollable section of the table will streach to fill the browser window.  
+                        When 'false' the scollable section of the table will determined by the 'height' option.
+                    </dd>
+                    <dd><i>Default:</i> false</dd>
+                    <dt>autoHeightMarginBottom</dt>
+                    <dd>Integer - The size of the margin between the bottom of the browser window and the table when 'autoHeight' is true.</dd>
+                    <dd><i>Default:</i> 20</dd>
+                    
+                </dl>
+            </div>
+            <div id="events" class="tabs-content">
+                <p><a href="autoheight.html">autoHeight demo</a> - Sample using the 'autoHeight' option.</p>
+                <p><a href="fixedheight.html">fixed height demo</a> - Sample using a fixed height table.</p>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="js/lib/jquery.tabify.min.js"></script>
+        <script src="js/jquery.freezetable.js"></script>
+        
+         
+        <script>
+            $(document).ready(function () {
+                $('#box-table-a').freezeTable({
+                    'autoHeight': false,
+                    'height': 160
+                });
+                $('#menu-tabs').tabify();
+            });
+        </script> 
+    </body>
+</html>
