@@ -67,11 +67,12 @@
 
     // A really lightweight plugin wrapper around the constructor, 
     // preventing against multiple instantiations
-    $.fn[pluginName] = function(options) {
+    $.fn[pluginName] = function(option) {
         return this.each(function() {
-            if (!$.data(this, 'plugin_' + pluginName)) {
-                $.data(this, 'plugin_' + pluginName, new FreezeTable(this, options));
-            }
+            var $this = $(this)
+                , data = $this.data('quantity')
+                , options = typeof option == 'object' && option;
+            if (!data) $this.data('quantity', (data = new FreezeTable(this, options)));
         });
     };
 })(jQuery, window, document);
